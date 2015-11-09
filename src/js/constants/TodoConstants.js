@@ -1,0 +1,9 @@
+
+module.exports = {
+    ITEM_ADD: "ITEM_ADD",
+    ITEM_REMOVE: "ITEM_REMOVE",
+    ITEM_UPDATE: "ITEM_UPDATE",
+    ITEM_DONE: "ITEM_DONE",
+    RECEIVE_DATA: "RECEIVE_DATA",
+    SET_LANG: "SET_LANG"
+};

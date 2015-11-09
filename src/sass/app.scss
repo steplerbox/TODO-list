@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'common';
+
+body {
+    background-color:  #ccc;
+    margin: 0;
+    font: $font-size $font;
+    color: $font-color;
+}
+
+.app-container{
+    margin: 0 auto;
+    min-width: 492px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $bg-color;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid $main-border-color;
+    border-top: none;
+    overflow: hidden;
+    padding-top: 10px;    
+    
+}

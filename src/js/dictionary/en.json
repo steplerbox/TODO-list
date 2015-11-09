@@ -1,0 +1,9 @@
+{
+    "todo-list": "TODO list",
+    "new-todo-item" : "New task",
+    "active" : "active",
+    "done" : "done",
+    "all" : "all",
+    "ok" : "OK",
+    "cancel" : "Cancel"
+}

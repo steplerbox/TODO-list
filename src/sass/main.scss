@@ -1,0 +1,156 @@
+@import 'variables';
+@import 'common';
+
+.main {
+    
+    padding: 15px;
+    .new-item-container, .edit-item-container{
+        position: relative;
+    }
+    .new-item-field, .edit-item-field{
+        line-height: 1.6;
+        font: $font-size $font;
+        color: $font-color;
+
+        padding: 10px 115px 10px 10px;
+        width: 335px;
+
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+
+        outline: none;
+        &:focus {
+            box-shadow: 0 0 5px 0px $outline-color inset ;
+        }
+    }
+    
+    .btns-container{
+        float: right;
+        .icon-pencil, .icon-remove{
+            vertical-align: middle;
+            margin: 0 5px;
+            padding: 5px;
+            border-radius: $border-radius;
+            border: 1px solid $border-color;
+            &:hover{
+                cursor: pointer;
+                background-color: $hover-bg-color;
+            }
+        }
+    }
+    
+    .edit-btns-container{
+        line-height: normal;
+        position: absolute;
+        top: 11px;
+        right: 5px;
+        &.hidden{
+            display: none;
+        }
+        &.show{
+            display: block;
+        }
+        .btn-ok, .btn-cancel{
+            font-style: normal;
+            margin: 0 0 0 5px;
+            padding: 5px;
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+            &:hover{
+                cursor: pointer;
+                background-color: $hover-bg-color;
+            }
+        }
+        .btn-ok{
+            background-color: $ok-bg-color;
+        }
+        .btn-cancel{
+            background-color: $cancel-bg-color;
+        }
+    }
+    
+    .todo-list {
+        padding: 0;
+        margin: 0;
+        
+        .todo-item {
+            
+            margin: 10px 0;
+            padding: 0;
+            line-height: 1.6;
+            list-style: none;
+            
+            .view{
+                padding: 10px 5px 10px;
+                margin: 0;
+                width: 450px;
+                background-color: $bg-color;
+                border-radius: $border-radius;
+                border: 1px solid $border-color;
+            }
+            .editing {
+                display: none;
+            }
+            
+            &.done{
+                input[type=checkbox] {
+                    & + label:before {
+                        color: $checked-color;
+                        background-color: $checked-bg-color;
+                    }
+                }
+            }
+            
+            input[type=checkbox] {
+                display: none;
+                
+                & + label{
+                    vertical-align: top;
+                    position: relative;
+                    padding: 5px;
+                    &:before {
+                        position: absolute;
+                        top: 0px;
+                        left: 5px;
+                        width: 15px;
+                        height: 15px;
+                        color: $unchecked-color;
+                        background-color: $unchecked-bg-color;
+                        padding: 5px;
+                        border-radius: $border-radius;
+                        border: 1px solid $border-color;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            span{
+                display: inline-block;
+                max-width: 335px;
+                word-wrap: break-word;
+                padding: 0 0 0 30px;
+                font-weight: normal;
+                
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'common';
+
+.header{
+    border-bottom: 1px solid $border-color;
+    
+    h1{
+        text-align: center;
+        margin: 0 0 10px 85px;
+    }
+    
+    .language{
+        float: right;
+        margin-right: 10px;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        width: 75px;
+    }
+    
+}
